@@ -14,7 +14,9 @@ function preload() {
   baseimage = loadImage("./assets/base.png");
   playerimage = loadImage("./assets/player.png");
 }
-
+if(keyCode == 32) {
+  arrow.shoot(playerArcher.body.angle);
+}
 function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
 
