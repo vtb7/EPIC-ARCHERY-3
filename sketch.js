@@ -14,7 +14,7 @@ function preload() {
   baseimage = loadImage("./assets/base.png");
   playerimage = loadImage("./assets/player.png");
 }
-if(keyCode == 32) {
+if(keyCode === 32) {
   arrow.shoot(playerArcher.body.angle);
 }
 function setup() {
@@ -51,7 +51,7 @@ function draw() {
   image(playerimage,player.position.x,player.position.y,50,180)
 
   playerArcher.display();
-
+  shoot();
   // Title
   fill("#FFFF");
   textAlign("center");
